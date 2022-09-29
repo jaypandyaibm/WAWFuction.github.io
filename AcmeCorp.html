@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<style>
+  body{
+    background-image:url('WatsonAvatar.gif');
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    height:10%;
+    width:10%;
+    height: 1000px;
+    width: 1000px;
+    padding:auto;
+    margin:auto;
+    }
+</style>
+ -->
+
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  background-image: url("watson_aura.gif");
+
+  /*background-image: url("WatsonAvatar.gif");*/
+/*  background-image: url("https://github.com/jaypandyaibm/WatsonAssistantDatabase/blob/main/watson_aura.gif");*/
+  /*background-color: #cccccc;*/
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: white;
+  position: relative;
+}
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-210%, -250%);
+  color: skyblue;
+}
+</style>
+<div class="hero-image">
+  <div class="hero-text">
+    <!-- <button>Home</button> -->
+    <h1 style="font-size:50px">Acme Corporation</h1>
+    <h3>Everything under one roof</h3>
+  </div>
+</div>
+
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "b96b93b5-9d26-42eb-b2fc-7df85c1ecd4b", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "0b052c85-f4f1-49fc-8133-27d976bda2fc", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+</html>

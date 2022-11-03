@@ -60,13 +60,13 @@ Go to the dialog node you just created and click on Customize on the top right c
 Step 3 — Define Responses: 
  Select the intent you want to use and provide the key, value pair for a webhook call: 
 
-<img src="./images/10keyvalue.png" alt="10keyvalue" style="width:800px;"/>
+<img src="./images/10keyvalue.png" alt="10keyvalue" style="width:600px;"/>
  
 After that name the returning variable. 
 Values from the repones can be extracted using the following code:
 <? $webhook_result_1.extract.data.count  ?>
 
-<img src="./images/11response.png" alt="11response" style="width:800px;"/>
+<img src="./images/11response.png" alt="11response" style="width:600px;"/>
 
 Step 4 — Check Result:
 You can easily try out your assistant by clicking on “Try it” on the right side. Pose different questions and notice the result! Have a look at the structure $webhook_result_1 by clicking on “Manage Context” in the Try Out Pane.

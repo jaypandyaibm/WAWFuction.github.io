@@ -2,13 +2,18 @@
 Web functions are low-code solutions that can be implemented by your API developer using predefined Python or Node.js templates.
 Here is a step by step guide to implement web function:
 Web functions are available on IBM cloud > Functions > Actions
+![functionlocation](https://github.com/jaypandyaibm/WAWFuction.github.io/blob/main/images/1function.png?raw=true)
+
 Tip: Make sure your Function namespace and your Watson Assistant both are on same region.
 
 Step 1: Create an Action by providing a name and selecting a runtime environment (which could be python or node.js) and click on Create:
+
+![createaction](./images/2CreateAction.png)
  
 Step 2: One can use the predefined API templates and modify them to create a custom program that fits a particular need. Here are templates for NodeJS and Python languages.  Simply, cut and paste the code into your Web Function action. 
 
-!(./image/1function.png)
+![codetem1](./images/3codetemp.png)
+![codetem2](./images/4codetemp.png)
 
 
 	

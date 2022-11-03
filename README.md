@@ -1,7 +1,11 @@
+# Watson Assistant: learn to access data from third party applications and APIs
 
-Web functions are low-code solutions that can be implemented by your API developer using predefined Python or Node.js templates.
-Here is a step by step guide to implement web function:
+In this article, you are provided with the information needed to set up a Watson Assistant instance to augment a conversation with live data from API calls. APIs can be set up to fetch near real time data from databases and/or to fetch public information on the internet.
+
+## Here is a step by step guide to implement web function:
+
 Web functions are available on IBM cloud > Functions > Actions
+
 ![functionlocation](https://github.com/jaypandyaibm/WAWFuction.github.io/blob/main/images/1function.png?raw=true)
 
 Tip: Make sure your Function namespace and your Watson Assistant both are on same region.
@@ -73,7 +77,9 @@ You can easily try out your assistant by clicking on “Try it” on the right s
 
 Now you have successfully integrated third party App/API with your Assistant, Cheers!!
 See the use case in action:
-Asset:https://techzone.ibm.com/collection/watson-assistant-for-backend-data-access
-Demo:https://htmlpreview.github.io/?https://github.com/jaypandyaibm/WAWFuction.github.io/blob/main/AcmeCorp.html
+
+-Asset:https://techzone.ibm.com/collection/watson-assistant-for-backend-data-access
+-Demo:https://htmlpreview.github.io/?https://github.com/jaypandyaibm/WAWFuction.github.io/blob/main/AcmeCorp.html
+
 Now Your turn 
 

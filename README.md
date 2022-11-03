@@ -8,7 +8,7 @@ Web functions are available on IBM cloud > Functions > Actions
 
 ![functionlocation](https://github.com/jaypandyaibm/WAWFuction.github.io/blob/main/images/1function.png?raw=true)
 
-Tip: Make sure your Function namespace and your Watson Assistant both are on same region.
+>Tip: Make sure your Function namespace and your Watson Assistant both are on same region.
 
 Step 1: Create an Action by providing a name and selecting a runtime environment (which could be python or node.js) and click on Create:
 
@@ -43,7 +43,7 @@ Copy down the URL that’s created under Web Actions, you’ll need this later.
 
 =
 Now that you have the program/function ready, you would like to know how to integrate it or link it with your Watson Assistant. This is where the WebHooks come in to play.
-Webhooks are used to bridge two applications/programs/functions which gets triggered by a specific event and transfer data on a near real time basis.
+>Webhooks are used to bridge two applications/programs/functions which gets triggered by a specific event and transfer data on a near real time basis.
 The webhook mechanism allow program to call an external program. When used in a dialog skill, a webhook gets triggered at the moment Watson Assistant processes a node for which webhook is enabled. The webhook collects the specified data or the data that the program collects from the user during the conversation and stores in context variables. It sends the data as part of a HTTP POST request to the URL you specify as part of your webhook definition. The URL that receives the webhook is the listener. It performs a predefined action on the information passed and returns a desired response.
 Let’s see how to enable it.
 Step 1 — Open Watson Assistant > Dialogs > Options > Webhooks:

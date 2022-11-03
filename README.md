@@ -15,23 +15,27 @@ Step 2: One can use the predefined API templates and modify them to create a cus
 ![codetem1](./images/3codetemp.png)
 ![codetem2](./images/4codetemp.png)
 
-
-	
- 
-
 The above code displays multiple conditions and when the parsed value matches the parameter value the code gets executed. 
-	Here, the “url: and raw_url:” are API endpoint URLs. 
-	API key can be setup, if needed otherwise could be removed. 
-	Request “method” could be “get”, “put” or “post. 
-	One can manipulate the return values in the return block.
+- Here, the “url: and raw_url:” are API endpoint URLs. 
+- API key can be setup, if needed otherwise could be removed. 
+- Request “method” could be “get”, “put” or “post. 
+- One can manipulate the return values in the return block.
+
 Once done, Save the function. You will see Invoke and Invoke with Parameters as below:
- 
+
+![invokepara](./images/5invokepara.png)
+
 Click on the Invoke with Parameters and add key, value pair to call a webhook as shown below. Apply the change and click on Invoke to validate it.
-  
+
+![invokepara](./images/6invokepara.png)
 
 Step 3: Now, select Endpoints from the left-hand side of the page and check Enable as Web Action and Save your changes.
 Copy down the URL that’s created under Web Actions, you’ll need this later.
-    
+
+![endpoint](./images/7endpoint.png)
+
+
+
 =
 Now that you have the program/function ready, you would like to know how to integrate it or link it with your Watson Assistant. This is where the WebHooks come in to play.
 Webhooks are used to bridge two applications/programs/functions which gets triggered by a specific event and transfer data on a near real time basis.
@@ -39,22 +43,32 @@ The webhook mechanism allow program to call an external program. When used in a 
 Let’s see how to enable it.
 Step 1 — Open Watson Assistant > Dialogs > Options > Webhooks:
 You will land on the window which looks like the one below. Now, we need to copy the endpoint of a web action we created above and paste it in the URL field along with the “.json” suffix as shown in the below screenshot:
- 
+
+![webhook](./images/8webhook.png)
+
+
 Step 2 — Build Dialog:
 Now, let’s create the conversational part. Navigate yourself to the Dialog section and click on Create Dialog. You will see how a basic dialog tree builds up. Create a new dialog node by clicking on Add Node.
 Go to the dialog node you just created and click on Customize on the top right corner with gear icon. Now enable Call out to webhooks / actions and select the Call a webhook as shown below: 
- 
+
+![9customize](./images/9customize.png)
+
 Step 3 — Define Responses: 
  Select the intent you want to use and provide the key, value pair for a webhook call: 
+
+![10keyvalue](./images/10keyvalue.png)
  
 After that name the returning variable. 
 Values from the repones can be extracted using the following code:
 <? $webhook_result_1.extract.data.count  ?>
+11response
 
-  
+![11response](./images/11response.png)
 
 Step 4 — Check Result:
 You can easily try out your assistant by clicking on “Try it” on the right side. Pose different questions and notice the result! Have a look at the structure $webhook_result_1 by clicking on “Manage Context” in the Try Out Pane.
+
+![12tryit](./images/12tryit.png)
  
 
 Now you have successfully integrated third party App/API with your Assistant, Cheers!!
